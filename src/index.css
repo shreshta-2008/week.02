@@ -1,0 +1,55 @@
+:root {
+  /* Wizarding Color Palette */
+  --parchment: #f4e1d2;
+  --ink: #2a0800;
+  --gold: #e2b13c;
+  
+  font-family: 'Crimson Text', 'Georgia', serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: var(--ink);
+  background-color: #1a0f00; /* Dark void behind the parchment */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --parchment: #f4e1d2;
+  --ink: #2a0800;
+  --gold: #e2b13c;
+  font-family: 'Crimson Text', serif;
+  background-color: #1a0f00;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stacks header above the main content */
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Base link styling for magical resources */
+a {
+  font-weight: 600;
+  color: var(--gold);
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Global heading style for the 'Daily Prophet' look */
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,34 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* The Container for Student Cards */
+.student-list {
+  display: flex; /* Magic of Flexbox */
+  flex-direction: row; /* Align cards side-by-side */
+  flex-wrap: wrap; /* Wrap to next line if screen is narrow */
+  justify-content: center; /* Center cards horizontally */
+  gap: 25px; /* Spacing between the "portraits" */
+  width: 100%;
+}
+
+.card {
+  flex: 1 1 300px; /* Grow/Shrink, base width of 300px */
+  max-width: 350px;
+  padding: 1.5em;
+  background: var(--parchment);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Hover effect like a floating charm */
+  box-shadow: 0 10px 20px rgba(226, 177, 60, 0.4);
+}
